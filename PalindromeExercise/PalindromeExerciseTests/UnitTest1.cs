@@ -8,10 +8,10 @@ namespace PalindromeExerciseTests
     {
         [Theory]
         [InlineData("racecar", true)] // test case
-        [InlineData("hello" false)]   // not palindrome case
-        [InlineData("Madam", true)]   // case sensitive
+        [InlineData("hello", false)]   // not palindrome case
+        [InlineData("Madam", true)]   // case-sensitive
         [InlineData("", true)]        // empty case
-        [InlineData("A man with a plan a canal Panama")] // sentance w/ spacing and casing
+        [InlineData("A man with a plan a canal Panama", false)] // sentence w/ spacing and casing
         public void IsAPalindromeTest(string input, bool expected)
         {
             var WordSmith = new WordSmith(); // arrange
